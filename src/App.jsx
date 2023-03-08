@@ -1,6 +1,6 @@
 import './App.css'
 import Expenses from './Components/Expenses';
-
+import NewExpenses from './Components/NewExpenses/NewExpenses';
 export default function App() {
 
   const expenses = [
@@ -25,7 +25,8 @@ export default function App() {
   ]
   return (
     <div className='App'>
-      <Expenses />
+      <NewExpenses/>
+      <Expenses expenses={expenses}/>
     </div>
   )
 }
