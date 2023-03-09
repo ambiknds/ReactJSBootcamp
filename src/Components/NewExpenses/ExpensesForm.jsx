@@ -21,6 +21,7 @@ export default function ExpensesForm(props){
     e.preventDefault();
     console.log('data Submit')
     const expenseData = {
+      id: Math.floor(Math.random()*100),
       title: enteredTitle,
       amount: enteredAmount,
       date: new Date(enteredDate),

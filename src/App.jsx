@@ -1,9 +1,9 @@
+import React, {useState} from 'react';
 import './App.css'
 import Expenses from './Components/Expenses';
 import NewExpenses from './Components/NewExpenses/NewExpenses';
-export default function App() {
 
-  const expenses = [
+const expensesData = [
     {
       id: 1,
       title: 'TV',
@@ -23,8 +23,13 @@ export default function App() {
       date: new Date(2022, 7, 23)
     }
   ]
+
+export default function App() {
+
+  const [expenses, setExpenses] = useState(expensesData)
   const addExpenseHandler = (expense) => {
     console.log('Inside App ', expense)
+    setExpenses([expense, ...expenses]);
   }
   return (
     <div className='App'>
