@@ -23,10 +23,13 @@ export default function App() {
       date: new Date(2022, 7, 23)
     }
   ]
+  const addExpenseHandler = (expense) => {
+    console.log('Inside App ', expense)
+  }
   return (
     <div className='App'>
-      <NewExpenses/>
-      <Expenses expenses={expenses}/>
+      <NewExpenses onAddExpense={addExpenseHandler} />
+      <Expenses expenses={expenses} />
     </div>
   )
 }
