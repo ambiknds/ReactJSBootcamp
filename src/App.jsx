@@ -6,21 +6,24 @@ import NewExpenses from './Components/NewExpenses/NewExpenses';
 const expensesData = [
     {
       id: 1,
-      title: 'TV',
-      amount: '$20.5',
-      date: new Date(2020, 4, 14)
+      title: 'Product 1',
+      price: '$20.5',
+      date: new Date(2020, 4, 14),
+      description: 'First product'
     },
     {
       id: 2,
-      title: 'Bike',
+      title: 'Product 2',
       amount: '$200.5',
-      date: new Date(2021, 6, 18)
+      date: new Date(2021, 6, 18),
+      description: 'Second product'
     },
     {
       id: 3,
-      title: 'Car Insurance',
+      title: 'Product 3',
       amount: '$60.5',
-      date: new Date(2022, 7, 23)
+      date: new Date(2022, 7, 23),
+      description: 'Third product'
     }
   ]
 
